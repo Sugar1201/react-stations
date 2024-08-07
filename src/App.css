@@ -1,0 +1,91 @@
+/* App.css */
+header {
+    font-size: 50px;
+    background-color: #f5f5f5;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  main {
+    display: flex; /* left と right が横に並んでいるのは、親要素 main に対して Flexbox の display: flex が1づつ適用されているため */
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .left {
+    flex: 1; 
+    display: flex; /* クラス内の要素を中揃えにする */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .right {
+    flex: 1;
+    display: flex;
+    flex-direction: column; /* クラス内の要素を縦方向に並べる */
+    align-items: center;
+  }
+  
+  .right img {
+    width: 300px; 
+    height: 300px;
+    object-fit: cover; /* 画像が縦横比を保ちながら枠に収まるようにする */
+    margin-bottom: 20px; 
+  }
+  
+  .right button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .BreedsSelectBox {
+    text-align: center;
+  }
+  
+  .DogListTitle {
+    font-size: 30px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .selector-container {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .select-button {
+    width: 150px;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .selectBox {
+    width: 500px;
+    height: 30px;
+  }
+
+  .images-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .images-list img {
+    width: 330px;
+    height: 330px;
+    object-fit: cover;
+  }
