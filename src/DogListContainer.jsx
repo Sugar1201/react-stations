@@ -33,7 +33,7 @@ export const DogListContainer = () => {
   const fetchImages = async () => {
     if (selectedBreed) {
       try {
-        const response = await fetch(`https://dog.ceo/api/breed/hound/images/random/3`);
+        const response = await fetch(`https://dog.ceo/api/breed/hound/images/random/12`);
         const data = await response.json();
         setImages(data.message);
       } catch (error) {
@@ -53,9 +53,11 @@ export const DogListContainer = () => {
         />
         <button className="select-button" onClick={fetchImages}>Show</button>
       </div>
+      <div className="images-list">
       {images.map((image, index) => (
             <DogImage key={index} imageUrl={image} />
           ))}
+      </div>
     </div>
   );
 };
